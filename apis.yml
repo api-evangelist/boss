@@ -1,8 +1,16 @@
 aid: boss
 name: Boss
-description: 'Boss is a company surfaced as a portfolio company of hongshan and added to the API Evangelist
-  network as a stub for enrichment. Sector: technology. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Boss (BOSS Zhipin / BOSS直聘) is the largest online recruitment platform in China
+  by average monthly active users, operated by Kanzhun Limited (NASDAQ: BZ, HKEX: 2076)
+  and founded in 2014 in Beijing. It pioneered the "Direct Recruitment" model, a
+  mobile-native experience that connects employers (bosses) and job seekers through
+  instant direct chat rather than static resume exchange, with candidate and job
+  matching powered by proprietary AI algorithms and big-data insights. The consumer
+  job-search product at zhipin.com does not publish a public developer/job-data API;
+  an authorized enterprise developer surface (BossHi mini-program open platform) exists
+  for partners. This profile was surfaced as a portfolio company of hongshan and added
+  to the API Evangelist network for enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/boss/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +18,30 @@ x-backed-by:
 - hongshan
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.zhipin.com/favicon.ico
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Technology
+- Recruitment
+- Human Resources
+- Jobs
+- Hiring
+- Talent
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/boss-domain-security.yml
 - type: Website
-  url: https://zhipin.com
+  url: https://www.zhipin.com
+- type: InvestorRelations
+  url: https://ir.zhipin.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
